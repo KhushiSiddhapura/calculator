@@ -7,18 +7,22 @@ arr.forEach(button => {
         if(e.target.innerHTML=="="){
             output = eval(output)
             input.value = output
+            console.log(input.value)
         }
         else if(e.target.innerHTML=="AC"){
             output = ""
             input.value = output
+            console.log(input.value)
         }
         else if(e.target.innerHTML=="DEL"){
             output = output.substring(0,output.length-1);
             input.value = output
+            console.log(input.value)
         }
         else{
-            input.value = output
             output = output + e.target.innerHTML
+            input.value = output
+            console.log(input.value)
         }
     })    
 })
